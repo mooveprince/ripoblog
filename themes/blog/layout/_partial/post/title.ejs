@@ -1,0 +1,23 @@
+<% if (post.link){ %>
+    <a href="<%- url_for(post.link) %>">
+      <h2 class="post-title">
+          <%= post.title %>
+      </h2>
+    </a>
+<% } else if (post.title){ %>
+  <% if (index){ %>
+    <a href="<%- url_for(post.path) %>">
+        <h2 class="post-title">
+            <%= post.title %>
+        </h2>
+        <h3 class="post-subtitle">
+            <%= post.subtitle %>
+        </h3>
+        <p class="post-meta"><%= date(post.date, date_format) %></p>
+    </a>
+  <% } else { %>
+    <h2 class="post-title">
+        <%= post.title %>
+    </h2>
+  <% } %>
+<% } %>
