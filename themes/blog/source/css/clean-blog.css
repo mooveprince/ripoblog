@@ -247,6 +247,12 @@ hr.small {
   font-weight: 300;
   margin-bottom: 10px;
 }
+
+.archive-article-header .post-subtitle {
+  font-size: 12px;
+  font-weight: 500;
+}
+
 .post-preview > .post-meta {
   color: #777777;
   font-size: 18px;
