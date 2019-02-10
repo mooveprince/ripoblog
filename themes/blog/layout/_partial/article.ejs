@@ -4,7 +4,7 @@
     <%- partial('post/title',{class_name: 'article-date', date_format: null}) %>
   <% } %>
 </div>
-  <div class="article-entry" itemprop="articleBody">
+<div class="article-entry" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
         <% if (theme.excerpt_link){ %>
@@ -15,4 +15,4 @@
       <% } else { %>
         <%- post.content %>
       <% } %>
-    </div>
+</div>
